@@ -43,10 +43,85 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-        <h1 class="text-5xl">
-            hello there <i class="fa-solid fa-arrow-right"></i>
-        </h1>
+    <header class="md:container mx-auto">
+
+        <!-- navbar section starts -->
+        <nav>
+            <div class="navbar flex justify-between">
+                <div>
+                    <a class="btn btn glass font-extrabold text-2xl">
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-color-primary rounded-full text-black p-1"></i>
+                        Exterios
+                    </a>
+                </div>
+                <div class="flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:font-black"><a>Home</a></li>
+                        <li class="hover:font-black"><a>Services</a></li>
+                        <li class="hover:font-black"><a>Portfolio</a></li>
+                        <li class="hover:font-black"><a>Blogs</a></li>
+                        <li class="hover:font-black"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="mx-2">
+                        <button class="btn btn-circle bg-gray-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="bg-gray-100 rounded-full mx-2">
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <div class="indicator">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                    <span class="badge badge-sm indicator-item">0</span>
+                                </div>
+                            </div>
+                            <div tabindex="0"
+                                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                                <div class="card-body">
+                                    <div class="card-actions">
+                                        <button class="btn bg-color-primary btn-block">View cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="bg-color-primary rounded-full px-4 py-2 font-extrabold hover:bg-color-secondary">Book
+                            Consultant
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full "></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner section starts -->
+        <div class="banner text-center mt-4">
+            <div class="mb-6">
+                <img class="mx-auto" src="assets/banner.png" alt="">
+            </div>
+            <div class="mb-9 w-3/4 mx-auto">
+                <h1 class="text-6xl font-extrabold mb-8">A barn house of this design has a striking appearance</h1>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek
+                    metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div>
+                <button class="bg-color-secondary rounded-full px-4 py-2 hover:bg-color-primary">View details <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-color-primary p-2 rounded-full "></i></button>
+            </div>
+        </div>
     </header>
 
     <main>
