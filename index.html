@@ -41,70 +41,54 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        .send-mail-section {
+            background-image: url(./assets/bg.jpg);
+        }
     </style>
 
     <title>Exterios</title>
 </head>
 
 <body class="font-manrope">
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto mb-20">
 
         <!-- navbar section starts -->
         <nav>
-            <div class="navbar flex justify-between">
-                <div>
-                    <a class="btn btn glass font-extrabold text-2xl">
-                        <i class="fa-solid fa-arrow-right -rotate-45 bg-color-primary rounded-full text-black p-1"></i>
-                        Exterios
-                    </a>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl">Exterios</a>
                 </div>
-                <div class="flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li class="hover:font-black"><a>Home</a></li>
-                        <li class="hover:font-black"><a>Services</a></li>
-                        <li class="hover:font-black"><a>Portfolio</a></li>
-                        <li class="hover:font-black"><a>Blogs</a></li>
-                        <li class="hover:font-black"><a>Contact Us</a></li>
-                    </ul>
+                <div class="navbar-center hidden lg:flex">
+                    <div>
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                    </div>
                 </div>
-                <div class="">
-                    <div class="mx-2">
-                        <button class="btn btn-circle bg-gray-100 rounded-full">
+                <div class="navbar-end">
+                    <div class="dropdown dropdown-end lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
-                        </button>
-                    </div>
-                    <div class="bg-gray-100 rounded-full mx-2">
-                        <div class="dropdown dropdown-end">
-                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                                <div class="indicator">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                    </svg>
-                                    <span class="badge badge-sm indicator-item">0</span>
-                                </div>
-                            </div>
-                            <div tabindex="0"
-                                class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                                <div class="card-body">
-                                    <div class="card-actions">
-                                        <button class="btn bg-color-primary btn-block">View cart</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <button
-                            class="bg-color-primary rounded-full px-4 py-2 font-extrabold hover:bg-color-secondary">Book
-                            Consultant
-                            <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full "></i>
-                        </button>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -115,8 +99,9 @@
             <div class="mb-6">
                 <img class="mx-auto" src="assets/banner.png" alt="">
             </div>
-            <div class="mb-9 w-3/4 mx-auto">
-                <h1 class="text-6xl font-extrabold mb-8">A barn house of this design has a striking appearance</h1>
+            <div class="mb-9 mx-auto">
+                <h1 class="text-4xl md:text-8xl font-extrabold mb-8">A barn house of this design has a striking
+                    appearance</h1>
                 <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                     weathered wood, sleek
                     metal accents, and large windows that flood the space with natural light.</p>
@@ -128,12 +113,12 @@
         </div>
     </header>
 
-    <main>
+    <main class="bg-gray-100">
         <!-- about us sections starts -->
-        <section class="bg-gray-100">
-            <div class=" md:container mx-auto md:flex gap-8 py-12">
+        <section class="mb-20">
+            <div class="md:container mx-auto md:flex items-end gap-8 pt-16">
                 <!-- about us section texts -->
-                <div>
+                <div class="relative">
                     <div>
                         <button class="btn bg-white rounded-3xl"><i class="fa-solid fa-arrow-right"></i>About
                             us</button>
@@ -154,13 +139,16 @@
                                 <p>The barn house captivates with its blend of rustic charm and modern.</p>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-xl mb-4 rounded-lg p-8">
+                        <div class="flex items-center bg-white shadow-xl rounded-lg p-8">
                             <img src="assets/residential.png" alt="">
                             <div class="p-4">
                                 <h4>Residential</h4>
                                 <p>The barn house captivates with its blend of rustic charm and modern.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="absolute -top-12 ">
+                        <img src="assets/Vector.png" alt="">
                     </div>
                 </div>
                 <!-- about us section image -->
@@ -171,10 +159,10 @@
         </section>
 
         <!-- How we work section starts -->
-        <section class="bg-slate-100">
+        <section class="mb-20">
             <div class="md:container mx-auto">
                 <div class="text-center">
-                    <button class="btn bg-white rounded-3xl mb-6"><i class="fa-solid      fa-arrow-right"></i>How we
+                    <button class="btn bg-white rounded-3xl mb-6"><i class="fa-solid fa-arrow-right"></i>How we
                         work</button>
                     <h1 class="text-5xl font-extrabold mb-6">Our Work Process</h1>
                     <p class="font-medium mb-6">The barn house captivates with its blend of rustic charm and modern
@@ -207,10 +195,191 @@
                 </div>
             </div>
         </section>
+
+        <!-- Latest portfolio section starts -->
+        <section class="bg-white pt-20 pb-20">
+            <div class="md:container mx-auto">
+                <div class="text-center">
+                    <button class="btn bg-color-secondary rounded-3xl mb-6"><i
+                            class="fa-solid fa-arrow-right"></i>Explore our latest works
+                    </button>
+                    <h1 class="text-5xl font-bold pb-4">Our Portfolio</h1>
+                    <p class="font-medium pb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+                        aperiam
+                        quibusdam consequatur
+                        dicta
+                        ut, eos quidem tempore reprehenderit, eligendi sed error ipsam nihil quasi dolore?</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-9 gap-4">
+
+                    <div class="sm:col-span-6 p-4 bg-white shadow-md rounded-lg">
+                        <div class="sm:flex items-center">
+                            <img src="assets/img1.png" alt="" class="w-full rounded-lg">
+                            <div class="p-6">
+                                <h1 class="text-xl font-semibold mb-4">Commercial</h1>
+                                <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm
+                                    and
+                                    modern. The barn house captivates with its blend of rustic
+                                    charm and modern .</p>
+                                <a class="link link-hover">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-3 p-4 bg-white shadow-md rounded-lg">
+                        <img src="assets/img2.png" alt="" class="w-full h-full rounded-lg sm:justify-self-end">
+                    </div>
+
+                    <div class="sm:col-span-2 p-4 bg-white shadow-md rounded-lg">
+                        <img src="assets/img3.png" alt="" class="w-full h-full rounded-lg">
+                    </div>
+
+                    <div class="sm:col-span-5 p-4 bg-white shadow-md rounded-lg">
+                        <div class="sm:flex items-center">
+                            <img src="assets/img4.png" alt="" class="w-full h-full rounded-lg">
+                            <div class="p-6">
+                                <h1 class="text-xl font-semibold mb-4">Commercial</h1>
+                                <p class="text-gray-500 mb-4">The barn house captivates with its blend of rustic charm
+                                    and
+                                    modern. The barn house captivates with its blend of rustic
+                                    charm and modern .</p>
+                                <a class="link link-hover">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-2 p-4 bg-white shadow-md rounded-lg">
+                        <img src="assets/img5.png" alt="" class="w-full rounded-lg">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 mt-20 mb-20">
+            <div class="md:container mx-auto">
+                <div class="text-center mb-8">
+                    <h1 class="text-5xl font-bold">Client's Feeback</h1>
+                    <p>Take a look on what our honorable client's are saying about us.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <div
+                                    class="ring-color-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-4">
+                                    <img src="assets/addedPictures/user-1.png" />
+                                </div>
+                            </div>
+                            <h2 class="card-title">James Jacob</h2>
+                            <p>"Creative, professional; transformed my space beautifully and seamlessly."
+                            </p>
+                            <div>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <div
+                                    class="ring-color-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-4">
+                                    <img src="assets/addedPictures/user-2.png" />
+                                </div>
+                            </div>
+                            <h2 class="card-title">Tracy Madison</h2>
+                            <p>"Exceeded expectations! Brought personality and to every room."
+                            </p>
+                            <div>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star-half-stroke text-amber-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <div class="card-body">
+                            <div class="avatar">
+                                <div
+                                    class="ring-color-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-4">
+                                    <img src="assets/addedPictures/user-3.png" />
+                                </div>
+                            </div>
+                            <h2 class="card-title">Emily Barbara</h2>
+                            <p>"Amazing eye for style, efficient process, and outstanding final results!"</p>
+                            <div>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- send mail section starts -->
+        <section class="send-mail-section mt- pt-12 pb-12">
+            <div class="text-center mb-8">
+                <button class="bg-color-secondary rounded-full px-4 py-2 hover:bg-color-primary"><i
+                        class="fa-solid fa-arrow-right"></i> Let's connect</button>
+                <h1 class="text-5xl font-bold">Let's Discuss Next Project</h1>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek
+                    metal accents.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-2">
+                <input type="text" placeholder="First Name" class="input input-bordered w-full rounded-3xl" />
+                <input type="text" placeholder="Last Name" class="input input-bordered w-full rounded-3xl" />
+                <input type="number" placeholder="Your number" class="input input-bordered w-full rounded-3xl" />
+                <input type="email" placeholder="Your email" class="input input-bordered w-full rounded-3xl" />
+                <textarea class="textarea textarea-bordered md:col-span-2 rounded-3xl"
+                    placeholder="Write Your Message Here"></textarea>
+                <button class="btn md:col-span-2 text-center bg-color-secondary rounded-3xl hover:bg-color-primary">Send
+                    Mail <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full "></i></button>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <!-- footer section starts -->
+    <footer class="bg-black text-white text-center pb-20">
+        <div class="pt-20">
+            <a class="btn bg-black border-none text-white font-extrabold pb-4 text-2xl">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-color-primary rounded-full text-black p-1"></i>
+                Exterios
+            </a>
+            <p class="text-gray-400">The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered
+                wood, sleek
+                metal accents.</p>
+        </div>
+        <div class="pt-12 pb-12">
+            <nav class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-24">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Services</a>
+                <a class="link link-hover">Portfolio</a>
+                <a class="link link-hover">Blogs</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+        </div>
+        <div>
+            <button
+                class="bg-color-primary text-black rounded-full px-4 py-2 font-extrabold hover:bg-color-secondary">Book
+                Consultant
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full "></i>
+            </button>
+        </div>
     </footer>
 </body>
 
